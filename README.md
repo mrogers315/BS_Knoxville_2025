@@ -9,6 +9,8 @@ https://github.com/MartyMacGyver/ESP32-Digital-RGB-LED-Drivers
 OLED Lib
 https://github.com/olikraus/u8g2
 
+Serial Driver
+
 Linux Driver Info
 https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/linux
 
