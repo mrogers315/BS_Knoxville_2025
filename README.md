@@ -1,7 +1,12 @@
-Arduino Config:
+Arduino Config
+
 Board ESP32 Dev Module
 https://github.com/espressif/arduino-esp32
+
+RGB LED Lib
 https://github.com/MartyMacGyver/ESP32-Digital-RGB-LED-Drivers
+
+OLED Lib
 https://github.com/olikraus/u8g2
 
 Linux Driver Info
