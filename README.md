@@ -1,3 +1,6 @@
+-----THE BOARD NEEDS TO OFF WHEN PLUGGING IT IN TO YOUR COMPUTER-----
+-----The Serial port will not come be live until the Battery id diconnected for saftey reasons--------
+
 Arduino Config
 
 Board ESP32 Dev Module
