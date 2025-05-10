@@ -55,3 +55,21 @@ arduino-cli board list
 cd FIRMWARE/build/esp32.esp32.esp32s3
 ./CMD_LINE.sh /dev/cu.usbserial-210
 ```
+# Alternate setup with Arduino IDE (GUI)
+## clone / fork badge repo
+* https://github.com/mrogers315/BS_Knoxville_2025
+```
+git clone git@github.com:mrogers315/BS_Knoxville_2025.git
+```
+
+## Install Arduino IDE
+* https://www.arduino.cc/en/software/
+
+## Arduino IDE configuration
+- Device type should be `ESP32S3 Dev Module`
+- Device connection is likely `/dev/cu.usbserial-10` (may differ on your machine)
+- We need to install `U8g2` and `Freenove_WS2812_Lib_for_ESP32` (screen libraries) through `Tools` -> `Manage Libraries`
+- To compile: `Sketch` -> `Verify/Compile`
+- If the firmware compiles without errors, do `Sketch` -> `Upload`
+- If you encounter `A fatal error occurred: Unable to verify flash chip connection (No serial data received.)` when uploading, try lowering default baud rate from `921600` to one step lower `460800` via `Tools` -> `Upload Speed`
+  - https://forum.arduino.cc/t/esp32-a-fatal-error-occurred-unable-to-verify-flash-chip-connection-no-serial-data-received-failed-uploading-uploading-error-exit-status-2/1250126/4
