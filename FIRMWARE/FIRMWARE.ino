@@ -21,6 +21,7 @@
 #include "Battery_Image.h"
 #include "Oompa.h"
 #include "Small_Battery.h"
+#include "htp_smiley.h"
 
 #define CHARGING_TIMEOUT 3000 //screen time out 30s
 #define BATTERY_READ 2000 //Battery read interval 10s
@@ -73,7 +74,7 @@ uint8_t batteryFrame = 0; //Animation frame tracker
 float voltageOffset = 0.001711011052; //Voltage divider voltage offset
 double batPercent = 0; //Battery percentage
 int batTime = 0;
-uint8_t logoCount = 2; //Logo index
+uint8_t logoCount = 3; //Logo index, set this equal to the number of logos
 uint8_t stateCount = 8; //State index
 uint8_t buttons = 0x00; //Holds button presses
 
@@ -254,6 +255,7 @@ void showLogo(uint8_t img, uint8_t color) {
   u8g2.setDrawColor(color);
   switch(img){
     case 0 : u8g2.drawXBM(0,1, bsk_logo_width,bsk_logo_height,bsk_logo_bits); break;
+    case 1 : u8g2.drawXBM(0,1, htp_smiley_width,htp_smiley_height,htp_smiley_bits); break;
     default : u8g2.drawXBM(0,1, fp_logo_width,fp_logo_height,fp_logo_bits);
   }
 
