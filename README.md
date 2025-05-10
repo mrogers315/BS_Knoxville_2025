@@ -40,19 +40,15 @@ brew install arduino-cli
 pip install esptool
 ```
 
-## test connection
+## test connection and note serial port
 * connect badge to USB
-* find serial port with board list
+* find serial port with the command below
 ```
 arduino-cli board list
 ```
 
-## update serial port in load script
-* edit BS_Knoxville_2025/FIRMWARE/build/esp32.esp32.esp32s3/CMD_LINE.sh
-* update `port` variable
-
-## run update firmware command
+## run update firmware command passing the serial port
 ```
-cd BS_Knoxville_2025/FIRMWARE/build/esp32.esp32.esp32s3
-./CMD_LINE.sh
+cd FIRMWARE/build/esp32.esp32.esp32s3
+./CMD_LINE.sh /dev/cu.usbserial-210
 ```
