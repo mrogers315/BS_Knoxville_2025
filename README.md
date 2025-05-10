@@ -69,6 +69,10 @@ git clone git@github.com:mrogers315/BS_Knoxville_2025.git
 - Device type should be `ESP32S3 Dev Module`
 - Device connection is likely `/dev/cu.usbserial-10` (may differ on your machine)
 - We need to install `U8g2` and `Freenove_WS2812_Lib_for_ESP32` (screen libraries) through `Tools` -> `Manage Libraries`
+- Based on the datasheet, the specific ESP32 chip on the badge is ESP32-S3-WROOM-1-N16R2, which has 16MB flash memory.
+  - With the default Flash Size, you may see a blank screen after flashing.
+  - With the serial monitor, you may also see `E (31) flash_parts: partition 3 invalid - offset 0x340000 size 0x330000 exceeds flash chip size 0x400000`
+  - Fix with `Tools` -> `Flash size` from default `4MB (32mb)` to `16MB (128Mb)`
 - To compile: `Sketch` -> `Verify/Compile`
 - If the firmware compiles without errors, do `Sketch` -> `Upload`
 - If you encounter `A fatal error occurred: Unable to verify flash chip connection (No serial data received.)` when uploading, try lowering default baud rate from `921600` to one step lower `460800` via `Tools` -> `Upload Speed`
