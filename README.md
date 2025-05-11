@@ -1,27 +1,29 @@
------THE BOARD NEEDS TO OFF WHEN PLUGGING IT IN TO YOUR COMPUTER-----
------The Serial port will not come be live until the Battery is diconnected for saftey reasons--------
+---
+```
+THE BOARD NEEDS TO OFF WHEN PLUGGING IT IN TO YOUR COMPUTER
+The Serial port will not come be live until the Battery is diconnected for saftey reasons
+```
+---
 
-Arduino Config
+# Arduino Config
 
-Board ESP32 Dev Module
+## Board ESP32 Dev Module
 https://github.com/espressif/arduino-esp32
 
-RGB LED Lib
+## RGB LED Lib
 https://github.com/MartyMacGyver/ESP32-Digital-RGB-LED-Drivers
 
-OLED Lib
+## OLED Lib
 https://github.com/olikraus/u8g2
 
+## Serial Drivers
+| OS      | Driver Link |
+| ---     | --- |
+| Linux   | https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/linux |
+| Windows | https://www.wch-ic.com/downloads/CH341SER_EXE.html |
+| Mac OSX | https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/mac-osx |
 
-Serial Driver
-
-Linux Driver Info
-https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/linux
-
-Windows Driver
-https://www.wch-ic.com/downloads/CH341SER_EXE.html
-
-Micropython
+## Micropython
 https://micropython.org/download/ESP32_GENERIC_S3/
 
 # macOS/Linux setup
@@ -38,6 +40,7 @@ brew install arduino-cli
 ```
 
 ## install arduino-esp32
+* https://docs.espressif.com/projects/esptool/en/latest/esp32s3/#quick-start
 * https://pypi.org/project/esptool/
 ```
 pip install esptool
