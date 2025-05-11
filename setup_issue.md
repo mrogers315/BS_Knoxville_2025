@@ -35,8 +35,24 @@ having to do something special to allow another driver at one point.
 Trying to find that doc and will add it here.
 
 # Other Stuff I tried
+## install Arduino IDE
+* https://docs.arduino.cc/software/ide/
+
+I installed the Arduino IDE and tried to add the driver via the IDE.  No luck there either.
+
+[![./setup_issue/arduino_ide_1.png](./setup_issue/arduino_ide_1.png)](./setup_issue/arduino_ide_1.png)
+[![./setup_issue/arduino_ide_2.png](./setup_issue/arduino_ide_2.png)](./setup_issue/arduino_ide_2.png)
+[![./setup_issue/arduino_ide_3.png](./setup_issue/arduino_ide_3.png)](./setup_issue/arduino_ide_3.png)
+[![./setup_issue/arduino_ide_4.png](./setup_issue/arduino_ide_4.png)](./setup_issue/arduino_ide_4.png)
+[![./setup_issue/arduino_ide_5.png](./setup_issue/arduino_ide_5.png)](./setup_issue/arduino_ide_5.png)
+[![./setup_issue/arduino_ide_6.png](./setup_issue/arduino_ide_6.png)](./setup_issue/arduino_ide_6.png)
+[![./setup_issue/arduino_ide_7.png](./setup_issue/arduino_ide_7.png)](./setup_issue/arduino_ide_7.png)
+[![./setup_issue/arduino_ide_8.png](./setup_issue/arduino_ide_8.png)](./setup_issue/arduino_ide_8.png)
+[![./setup_issue/arduino_ide_9.png](./setup_issue/arduino_ide_9.png)](./setup_issue/arduino_ide_9.png)
+[![./setup_issue/arduino_ide_10.png](./setup_issue/arduino_ide_10.png)](./setup_issue/arduino_ide_10.png)
+
 ## install arduino-esp32 (DO NOT DO THIS)
-* use the pip command to install
+* use the pip command to install instead of following the instructions below.
 * https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html#macos
 ```
 git clone https://github.com/espressif/arduino-esp32.git
